@@ -1,0 +1,39 @@
+﻿
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('li').each(function (index, element) {
+                /* alert('index '+ index + ".element" + $(element).text());*/
+                /* $(this).css('color', 'red');*/
+            //    $('#result').html($('#result').html() + "<br />" + $(this).text());
+              //method chaining
+                $('li').css('color', 'red');
+                $('li').slideUp(1000);
+                $('li').slideDown(1000);
+                $('li').css('color','blue');
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <ul>
+        <li>Us</li>
+        <li>UK</li>
+        <li>CN</li>
+        <li>JP</li>
+        <li>VN</li>
+    </ul>
+    <br />
+    <div id="result"></div>
+
+
+</body>
+</html>

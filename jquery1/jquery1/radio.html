@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#submit').on('click', function () {
+                var chkchecked = $('input[type='checkbox']:checked');
+                if (chkchecked.length > 0) {
+                    $('#divrs').text(chkchecked.length + 'check selected')
+                } else {
+                    $('#divrs').text('no check selected')
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <label>
+        <input type="checkbox" value="C" /> C
+    </label>
+    <label>
+        <input type="checkbox" value="java" /> Java
+    </label>
+    <label>
+        <input type="checkbox" value="js" /> Jss
+    </label>
+
+    <br />
+    <input type="button" id="submit" value="sm" />
+    <div class="divrs"></div>
+</body>
+</html>

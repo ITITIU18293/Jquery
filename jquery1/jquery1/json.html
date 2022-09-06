@@ -1,0 +1,44 @@
+﻿<!--Json là kiểu dữ liệu dùng để trao đổi
+    javascript object notation
+    định dạng nhỏ gọn dùng để truyền dữ liệu-->
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            var emplJson = [{
+                "mname": "Long",
+                "lname": "nguyen",
+                "email": "asdE",
+                "age": 14
+            },
+            {
+                    "mname": "Laong",
+                    "lname": "s",
+                    "email": "asdEss",
+                    "age": 20
+              
+                }
+            ];
+            /*$('#result').html("1name " + emplJson.mname);*/
+            //var result = '';
+            //$.each($(emplJson), function (i, item) {
+            //    result += "1nam " + item.mname + ". lastname: " + item.lname + "<br>";
+            //});
+            //$('#result').html(result);
+            $('#result').html(JSON.stringify(emplJson));
+            var content = $('result').html();
+            var ojJson = JSON.parse(content);
+            console.log(ojJson);
+        });
+    </script>
+</head>
+<body>
+    <div id="result"></div>
+</body>
+</html>

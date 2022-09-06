@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#btnsubmit').click(function () {
+                var a = $('#skill option: selected');
+                if (a.length > 0) {
+                    $('#divResult').html('value: ' + a.val() + "Text: " + a.text());
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <select id="skill" multiple>
+        <option>Choose</option>
+        <option value="C">C</option>
+        <option value="C+">C+</option>
+        <option value="java">java</option>
+        <option value="js">js</option>
+    </select>
+    <br />
+    <input type="button" value="submit" id="btnsubmit" />
+    <br />
+    <div id="divResult"></div>
+</body>
+</html>

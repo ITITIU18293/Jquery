@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<!--prepend element là thêm mới nội dung nào đó vào phần nội dung đầu tiên của nội dung mỗi element thỏa mãn selector-->
+<!--1. prepend()-> $('div').prepend('<b>tutorial</b>');
+2. prependTo() -> $('<b>tutorial</b>').prependTo('div');-->
+<!--append element là thêm mới nội dung nào đó vào phần nội dung cuối của nội dung mỗi element thỏa mãn selector-->
+<!--1. append()-> $('div').append('<b>tutorial</b>');
+2. apppendTo() -> $('<b>tutorial</b>').appendTo('div');-->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('div').prepend('<b>programing </b>');
+        });
+    </script>
+</head>
+<body>
+    
+        <div>java</div>
+        <div>js</div>
+        <div>c</div>
+    
+</body>
+</html>

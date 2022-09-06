@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .my-border{
+            border: 1px solid yellow; 
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('[title]').addClass('my-border');
+        });
+    </script>
+</head>
+<body>
+    <div class="demo" title="div2" style="background-color:darkblue">
+        <span>
+            this is first
+        </span>
+    </div>
+    <div class="demo" title="div3">
+        <span>
+            this is third
+        </span>
+    </div>
+    <div class="demo" title="div3">
+        <span>
+            this is fourth
+        </span>
+    </div>
+    <div class="demo" title="div5">
+        <span>
+            this is fifth
+        </span>
+    </div>
+</body>
+</html>
